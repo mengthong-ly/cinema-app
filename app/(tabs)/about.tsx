@@ -1,20 +1,16 @@
-import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function Index() {
+export default function AboutScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Hi My name is Mengthong</Text>
-      <Link href={"/about"} style={styles.button}>
-        Go to About
-      </Link>
+      <Text style={styles.text}>This is About Screen</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   navigationbar: {
-    backgroundColor: "#ffffff",
+    backgroundColor: "#202020",
   },
   header: {
     color: "#ffffff",
@@ -29,10 +25,5 @@ const styles = StyleSheet.create({
     color: "#303030",
     fontSize: 20,
     fontWeight: "600",
-  },
-  button: {
-    marginTop: 20,
-    fontSize: 18,
-    color: "#1E90FF",
   },
 });
